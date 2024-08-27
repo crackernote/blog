@@ -1,5 +1,5 @@
 baseURL = "https://crackernote.github.io/"
-title = "ExampleSite"
+title = "CrackerNote"
 paginate = 5
 theme = "PaperMod"
 enableRobotsTXT = true
