@@ -69,20 +69,8 @@ tocopen = false
     url = "tags"
 
   [params.homeInfoParams]
-  Title = "Hi there 👋"
+  Title = "CrackerNote 👋"
   Content = "Welcome to my blog"
-
-  [[params.socialIcons]]
-  name = "x"
-  url = "https://x.com/"
-
-  [[params.socialIcons]]
-  name = "stackoverflow"
-  url = "https://stackoverflow.com"
-
-  [[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/"
 
 [params.analytics.google]
 SiteVerificationTag = "XYZabc"
