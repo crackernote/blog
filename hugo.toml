@@ -121,3 +121,17 @@ weight = 30
 
 [markup.highlight]
 noClasses = false
+
+[params.giscus]
+repo = "crackernote/crackernote.github.io"
+repoID = "R_kgDOI_VMsw"
+category = "Announcements"
+categoryID = "DIC_kwDOI_VMs84CUTZR"
+mapping = "og:title"
+dataStrict = "1"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "bottom"
+theme = "preferred_color_scheme"
+lang = "ko"
+loading = "lazy"
