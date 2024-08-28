@@ -135,3 +135,9 @@ inputPosition = "bottom"
 theme = "preferred_color_scheme"
 lang = "ko"
 loading = "lazy"
+
+[[menu.main]]
+identifier = "archives"
+name = "Archives"
+url = "/archives/"
+weight = 10
