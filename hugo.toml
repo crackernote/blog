@@ -108,6 +108,12 @@ url = "/categories/"
 weight = 10
 
 [[menu.main]]
+identifier = "archives"
+name = "Archives"
+url = "/archives/"
+weight = 10
+
+[[menu.main]]
 identifier = "tags"
 name = "tags"
 url = "/tags/"
@@ -136,8 +142,3 @@ theme = "preferred_color_scheme"
 lang = "ko"
 loading = "lazy"
 
-[[menu.main]]
-identifier = "archives"
-name = "Archives"
-url = "/archives/"
-weight = 10
