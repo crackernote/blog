@@ -1,13 +1,25 @@
 ---
-layout: single
 title: "Active Directory Cheatsheet"
-categories: OSCP
-tag: [Offensive Security, Penetration Testing, OSCP, Active Directory]
-toc: true
-toc_sticky: true
-toc_label: 목차
-author_profile: false
+date: 2024-08-29T10:47:23+09:00
+# weight: 1
+# aliases: ["/OSCP"]
+tags: ["Offensive Security, Penetration Testing, OSCP, Active Directory"]
+author: "CrackerNote"
+showToc: true
+TocOpen: false
+draft: false
+hidemeta: false
 comments: true
+disableHLJS: false # to disable highlightjs
+disableShare: true
+hideSummary: false
+searchHidden: true
+ShowReadingTime: false
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowWordCount: false
+ShowRssButtonInSectionTermList: true
+UseHugoToc: false
 ---
 
 ## 1️⃣ Active Directory Cheatsheet
