@@ -20,6 +20,7 @@ ShowPostNavLinks: true
 ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
+searchHidden: true
 ---
 
 ## 1️⃣ Active Directory Cheatsheet

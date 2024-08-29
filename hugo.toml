@@ -132,3 +132,5 @@ theme = "preferred_color_scheme"
 lang = "ko"
 loading = "lazy"
 
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
