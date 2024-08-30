@@ -1,6 +1,6 @@
 ---
 title: "Active Directory Cheatsheet"
-date: 2024-08-29T10:47:23+09:00
+date: 2023-03-14
 # weight: 1
 # aliases: ["/OSCP"]
 tags: ["Offensive Security", "Penetration Testing", "OSCP", "Active Directory"]

@@ -1,4 +1,27 @@
 ---
+title: "Ansible을 이용한 스크립트 실행방법"
+date: 2023-11-20
+# weight: 1
+# aliases: ["/취약점분석 자동화"]
+tags: ["취약점 분석", "Automation", "Ansible"]
+author: "CrackerNote"
+showToc: true
+TocOpen: false
+draft: false
+hidemeta: false
+comments: true
+disableHLJS: false # to disable highlightjs
+disableShare: true
+hideSummary: false
+searchHidden: true
+ShowReadingTime: false
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowWordCount: false
+ShowRssButtonInSectionTermList: true
+UseHugoToc: false
+searchHidden: true
+
 layout: single
 title: "Ansible을 이용한 스크립트 실행방법"
 categories: 자동화

@@ -1,12 +1,26 @@
 ---
-layout: single
 title: "Ansible 설치 및 설정하기"
-categories: 자동화
-tag: [Automation, Ansible, Python]
-toc: true
-toc_sticky: true
-toc_label: 목차
-author_profile: false
+date: 2023-11-20
+# weight: 1
+# aliases: ["/취약점분석 자동화"]
+tags: ["취약점 분석", "Automation", "Ansible"]
+author: "CrackerNote"
+showToc: true
+TocOpen: false
+draft: false
+hidemeta: false
+comments: true
+disableHLJS: false # to disable highlightjs
+disableShare: true
+hideSummary: false
+searchHidden: true
+ShowReadingTime: false
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowWordCount: false
+ShowRssButtonInSectionTermList: true
+UseHugoToc: false
+searchHidden: true
 ---
 
 ## 1. Ansible 설치

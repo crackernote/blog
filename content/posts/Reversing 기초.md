@@ -1,12 +1,26 @@
 ---
-layout: single
 title: "Reversing Basic"
-categories: Pentest
-tag: [Reversing, Pentesting]
-toc: true
-toc_sticky: true
-toc_label: 목차
-author_profile: false
+date: 2023-07-18
+# weight: 1
+# aliases: ["/Pentest"]
+tags: ["Reversing", "Penetration Testing"]
+author: "CrackerNote"
+showToc: true
+TocOpen: false
+draft: false
+hidemeta: false
+comments: true
+disableHLJS: false # to disable highlightjs
+disableShare: true
+hideSummary: false
+searchHidden: true
+ShowReadingTime: false
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowWordCount: false
+ShowRssButtonInSectionTermList: true
+UseHugoToc: false
+searchHidden: true
 ---
 
 ## 1️⃣ Reversing 기초

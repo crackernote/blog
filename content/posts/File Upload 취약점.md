@@ -1,12 +1,26 @@
 ---
-layout: single
 title: "File Upload 취약점"
-categories: Pentest
-tag: [Web, Pentesting, File upload 취약점]
-toc: true
-toc_sticky: true
-toc_label: 목차
-author_profile: false
+date: 2023-07-10
+# weight: 1
+# aliases: ["/Pentest"]
+tags: ["Web Security", "Penetration Testing", "File Upload Vuln"]
+author: "CrackerNote"
+showToc: true
+TocOpen: false
+draft: false
+hidemeta: false
+comments: true
+disableHLJS: false # to disable highlightjs
+disableShare: true
+hideSummary: false
+searchHidden: true
+ShowReadingTime: false
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowWordCount: false
+ShowRssButtonInSectionTermList: true
+UseHugoToc: false
+searchHidden: true
 ---
 
 ## 1️⃣ File Upload 취약점 정리

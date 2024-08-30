@@ -1,12 +1,26 @@
 ---
-layout: single
 title: "Android 보안모델"
-categories: Pentest
-tag: [Mobile, Android Security Model, Pentesting]
-toc: true
-toc_sticky: true
-toc_label: 목차
-author_profile: false
+date: 2023-07-12
+# weight: 1
+# aliases: ["/Mobile Security"]
+tags: ["Mobile Security", "Penetration Testing", "Android"]
+author: "CrackerNote"
+showToc: true
+TocOpen: false
+draft: false
+hidemeta: false
+comments: true
+disableHLJS: false # to disable highlightjs
+disableShare: true
+hideSummary: false
+searchHidden: true
+ShowReadingTime: false
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowWordCount: false
+ShowRssButtonInSectionTermList: true
+UseHugoToc: false
+searchHidden: true
 ---
 
 ## 1️⃣ Android 보안모델	

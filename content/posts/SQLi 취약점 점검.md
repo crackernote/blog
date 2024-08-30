@@ -1,13 +1,26 @@
 ---
-toc_sticky: true
-layout: single
 title: "SQL Injection 취약점 점검"
-categories: Pentest
-tag: [Web, SQL Injection, Pentesting]
-toc: true
-toc_sticky: true
-toc_label: 목차
-author_profile: false
+date: 2023-07-20
+# weight: 1
+# aliases: ["/Pentest"]
+tags: ["Web Security", "Penetration Testing", "SQL Injection"]
+author: "CrackerNote"
+showToc: true
+TocOpen: false
+draft: false
+hidemeta: false
+comments: true
+disableHLJS: false # to disable highlightjs
+disableShare: true
+hideSummary: false
+searchHidden: true
+ShowReadingTime: false
+ShowBreadCrumbs: true
+ShowPostNavLinks: true
+ShowWordCount: false
+ShowRssButtonInSectionTermList: true
+UseHugoToc: false
+searchHidden: true
 ---
 
 ## 1️⃣ SQL Injection 취약점 점검
@@ -48,12 +61,14 @@ author_profile: false
 
 
 
+
    c. select * from board where (case when 1=1 then 'test' else 'aaa' end) like '%test%' 
 
 
     \> 버프에서 입력시 (case+when+1=1+then+'test'+else+'aaa'+end) 공백을 넣어줘야함
 
    
+
 
 
 
@@ -99,6 +114,7 @@ author_profile: false
      \- "select * from member where id=' (admin' or '1'='1) ' and pw='{$pw}'"
 
   
+
 
 
 
@@ -160,12 +176,14 @@ author_profile: false
 
 
 
+
    e. 게시글 삭제
 
     \> delete 구문에 password 검증 쿼리 예측
      \- delete from where idx=7 and password=''
 
   
+
 
 
 
@@ -205,6 +223,7 @@ author_profile: false
 
 
 
+
    c. MySQL 데이터 조회
 
    
@@ -212,6 +231,7 @@ author_profile: false
     \> 1. 순차적 접근(DB목록화, Table 목록화, 컬럼 목록화),
 
    
+
 
 
 
@@ -251,6 +271,7 @@ author_profile: false
 
 
 
+
   ​     \* 원하는 테이블 이름 출력 :
 
   ​      select table_name from information_schema.tables where table_schema='board'
@@ -275,6 +296,7 @@ author_profile: false
     \> 1. 순차적 접근 
 
    
+
 
 
 
@@ -350,6 +372,7 @@ author_profile: false
 
 
 
+
    b. MSSQL
 
     \> sysdatabases(Master DB에 존재) / sysobjects (각 사용 DB에 존재) / syscolumns (각 사용 DB에 존재)
@@ -363,11 +386,13 @@ author_profile: false
 
 
 
+
    c. ORACLE
 
     \> all_tables / all_tab_columns
 
    
+
 
 
 
@@ -381,6 +406,7 @@ author_profile: false
      \> 순차적 접근 :
 
    
+
 
 
 
