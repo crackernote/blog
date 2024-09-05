@@ -26,7 +26,7 @@ searchHidden: true
 ## 1️⃣ DreamHack Web Beginner_Cookie
 
 1. 문제확인 (https://dreamhack.io/wargame/challenges/6)
-2. 풀이
+2. 풀dl
 
   
 
@@ -34,7 +34,7 @@ searchHidden: true
 
 > 드림핵 사이트에서 문제 확인
 
-![image-20240905103056784](C:\Users\kakaopaysec\AppData\Roaming\Typora\typora-user-images\image-20240905103056784.png)
+![image-20240905161507742](assets/image-20240905161507742.png)
 
 > 서버 오픈 후 접속하면 아래와 같이 간단한 로그인 페이지 확인
 
