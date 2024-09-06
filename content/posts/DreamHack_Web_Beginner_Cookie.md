@@ -21,6 +21,7 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 searchHidden: true
+typora-root-url: ../
 ---
 
 ## 1️⃣ DreamHack Web Beginner_Cookie
@@ -38,7 +39,7 @@ searchHidden: true
 
 > 서버 오픈 후 접속하면 아래와 같이 간단한 로그인 페이지 확인
 
-![image-20240905103244101](C:\Users\kakaopaysec\AppData\Roaming\Typora\typora-user-images\image-20240905103244101.png)
+![1](/images/DreamHack_Web_Beginner_Cookie/1.png)
 
 > 문제파일 다운후 코드 확인 가능
 
