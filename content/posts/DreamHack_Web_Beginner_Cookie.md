@@ -27,7 +27,7 @@ typora-root-url: ../
 ## 1️⃣ DreamHack Web Beginner_Cookie
 
 1. 문제확인 (https://dreamhack.io/wargame/challenges/6)
-2. 풀dl
+2. 풀이
 
   
 
@@ -35,7 +35,7 @@ typora-root-url: ../
 
 > 드림핵 사이트에서 문제 확인
 
-![image-20240906073832905](../../../../AppData/Roaming/Typora/typora-user-images/image-20240906073832905.png)
+![image-20240909090414881](/images/DreamHack_Web_Beginner_Cookie/image-20240909090414881.png)
 
 > 서버 오픈 후 접속하면 아래와 같이 간단한 로그인 페이지 확인
 
@@ -96,8 +96,8 @@ app.run(host='0.0.0.0', port=8000)
 
 > guest로 로그인 후 쿠키값을 확인 
 
-![image-20240905104758629](C:\Users\kakaopaysec\AppData\Roaming\Typora\typora-user-images\image-20240905104758629.png)
+![image-20240909090510093](/images/DreamHack_Web_Beginner_Cookie/image-20240909090510093.png)
 
 > 쿠키값을 admin으로 변경 후 새로고침을 하게되면 플래그를 획득 가능
 
-![image-20240905104854104](C:\Users\kakaopaysec\AppData\Roaming\Typora\typora-user-images\image-20240905104854104.png)
+![image-20240909090528375](/images/DreamHack_Web_Beginner_Cookie/image-20240909090528375.png)
