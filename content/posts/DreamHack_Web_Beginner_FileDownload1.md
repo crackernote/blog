@@ -21,6 +21,7 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 searchHidden: true
+typora-root-url: ../
 ---
 
 ## 1️⃣ DreamHack Web Beginner_File Download 1
@@ -34,11 +35,11 @@ searchHidden: true
 
 > 드림핵 사이트에서 문제 확인
 
-![image-20240905142046901](C:\Users\kakaopaysec\AppData\Roaming\Typora\typora-user-images\image-20240905142046901.png)
+![image-20240909091236980](/images/DreamHack_Web_Beginner_FileDownload1/image-20240909091236980.png)
 
 > 서버 오픈 후 접속하면 아래와 같이 메모를 업로드 할 수 있는 웹서비스 확인
 
-![image-20240905142158681](C:\Users\kakaopaysec\AppData\Roaming\Typora\typora-user-images\image-20240905142158681.png)
+![image-20240909091251984](/images/DreamHack_Web_Beginner_FileDownload1/image-20240909091251984.png)
 
 > 문제파일 다운후 코드 확인 가능
 
@@ -116,4 +117,4 @@ if __name__ == '__main__':
 
 > 업로드 된 경로에서 flag.py 파일을 읽음
 
-![image-20240905142521463](C:\Users\kakaopaysec\AppData\Roaming\Typora\typora-user-images\image-20240905142521463.png)
+![image-20240909091316479](/images/DreamHack_Web_Beginner_FileDownload1/image-20240909091316479.png)

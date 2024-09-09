@@ -21,6 +21,7 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 searchHidden: true
+typora-root-url: ../
 ---
 
 ## 1️⃣ DreamHack Web Beginner_Pathtraversal
@@ -34,11 +35,11 @@ searchHidden: true
 
 > 드림핵 사이트에서 문제 확인
 
-![image-20240905124320130](C:\Users\kakaopaysec\AppData\Roaming\Typora\typora-user-images\image-20240905124320130.png)
+![image-20240909091348588](/images/DreamHack_Web_Beginner_PathTraversal/image-20240909091348588.png)
 
 > 서버 오픈 후 접속하면 아래와 같이 간단한 고객정보 페이지 확인
 
-![image-20240905125252027](C:\Users\kakaopaysec\AppData\Roaming\Typora\typora-user-images\image-20240905125252027.png)
+![image-20240909091359984](/images/DreamHack_Web_Beginner_PathTraversal/image-20240909091359984.png)
 
 > 문제파일 다운후 코드 확인 가능
 
@@ -124,8 +125,8 @@ application = app # app.run(host='0.0.0.0', port=8000)
 
 > 코드에서 경로 확인 후 pathtraversal 취약점으로 확인 해봤지만 빈 데이터가 나옴
 
-![image-20240905125600466](C:\Users\kakaopaysec\AppData\Roaming\Typora\typora-user-images\image-20240905125600466.png)
+![image-20240909091417851](/images/DreamHack_Web_Beginner_PathTraversal/image-20240909091417851.png)
 
 > 버프로 다시 확인한 결과 response 에서 flag 확인 가능함
 
-![image-20240905125713647](C:\Users\kakaopaysec\AppData\Roaming\Typora\typora-user-images\image-20240905125713647.png)
+![image-20240909091425512](/images/DreamHack_Web_Beginner_PathTraversal/image-20240909091425512.png)
