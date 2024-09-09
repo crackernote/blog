@@ -21,6 +21,7 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 searchHidden: true
+typora-root-url: ../
 ---
 
 ## 1️⃣ Android App 구성요소	

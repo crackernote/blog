@@ -21,6 +21,7 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 searchHidden: true
+typora-root-url: ../
 ---
 
 ## 1️⃣ AWS Certified Security 준비_용어정리
@@ -35,5 +36,4 @@ searchHidden: true
 | :--------- | ------------------------------------------------------------ |
 | CloudTrail | AWS CloudTrail 기업의 운영 및 위험 감사, 거버넌스 및 규정 준수를 지원하는 솔루션입니다. AWS 서비스 AWS 계정사용자, 역할 또는 AWS 서비스가 수행한 작업은 에 이벤트로 기록됩니다. CloudTrail 이벤트에는 AWS Management Console, AWS Command Line Interface, AWS SDKs 및 에서 수행한 작업이 포함됩니다APIs |
 | CloudWatch |                                                              |
-
 

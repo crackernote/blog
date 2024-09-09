@@ -21,6 +21,7 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 searchHidden: true
+typora-root-url: ../
 ---
 
 ## 1️⃣ AWS Certified Security 준비_문제풀이

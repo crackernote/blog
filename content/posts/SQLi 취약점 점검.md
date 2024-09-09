@@ -21,6 +21,7 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 searchHidden: true
+typora-root-url: ../
 ---
 
 ## 1️⃣ SQL Injection 취약점 점검
@@ -62,12 +63,16 @@ searchHidden: true
 
 
 
+
+
    c. select * from board where (case when 1=1 then 'test' else 'aaa' end) like '%test%' 
 
 
     \> 버프에서 입력시 (case+when+1=1+then+'test'+else+'aaa'+end) 공백을 넣어줘야함
 
    
+
+
 
 
 
@@ -114,6 +119,8 @@ searchHidden: true
      \- "select * from member where id=' (admin' or '1'='1) ' and pw='{$pw}'"
 
   
+
+
 
 
 
@@ -177,12 +184,16 @@ searchHidden: true
 
 
 
+
+
    e. 게시글 삭제
 
     \> delete 구문에 password 검증 쿼리 예측
      \- delete from where idx=7 and password=''
 
   
+
+
 
 
 
@@ -224,6 +235,8 @@ searchHidden: true
 
 
 
+
+
    c. MySQL 데이터 조회
 
    
@@ -231,6 +244,8 @@ searchHidden: true
     \> 1. 순차적 접근(DB목록화, Table 목록화, 컬럼 목록화),
 
    
+
+
 
 
 
@@ -272,6 +287,8 @@ searchHidden: true
 
 
 
+
+
   ​     \* 원하는 테이블 이름 출력 :
 
   ​      select table_name from information_schema.tables where table_schema='board'
@@ -296,6 +313,8 @@ searchHidden: true
     \> 1. 순차적 접근 
 
    
+
+
 
 
 
@@ -373,6 +392,8 @@ searchHidden: true
 
 
 
+
+
    b. MSSQL
 
     \> sysdatabases(Master DB에 존재) / sysobjects (각 사용 DB에 존재) / syscolumns (각 사용 DB에 존재)
@@ -382,6 +403,8 @@ searchHidden: true
     \> Information_schema.schemata / Information_schema.tables / Information_schema.columns
 
    
+
+
 
 
 
@@ -397,6 +420,8 @@ searchHidden: true
 
 
 
+
+
   **6) DBMS별 메타데이터 목록화**
 
    
@@ -406,6 +431,8 @@ searchHidden: true
      \> 순차적 접근 :
 
    
+
+
 
 
 

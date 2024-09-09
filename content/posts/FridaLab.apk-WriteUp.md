@@ -21,6 +21,7 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 searchHidden: true
+typora-root-url: ../
 ---
 
 ## 1️⃣ FridaLab.apk WriteUp
@@ -40,7 +41,7 @@ searchHidden: true
 \- 8가지 문제에 대하여 조건이 만족하면 check를 눌렀을때 색상이 Green으로 바뀐다.
   (조건이 만족하지 못하는 경우는 빨간색!)
 
-![img](https://blog.kakaocdn.net/dn/UoiHw/btqBUTx3BYj/3xjd11kukj90L4QPKOSk10/img.png)
+![image-20240909092715174](/images/FridaLab.apk-WriteUp/image-20240909092715174.png)
 
 
 
@@ -49,8 +50,7 @@ searchHidden: true
 \- 문제 : Change class challenge_01's variable 'chall01' to : 1
  \> 문제는 Challenge_01 클래스의 변수인 chall01의 값을 1로 바꾸라는 것이다.
  \> 문제를 해결하기 위해 Jadx를 통해서 FridaLab을 분석해보자
-
-![img](https://k.kakaocdn.net/dn/cjD6Rg/btqBS7jtXSY/oXWuMyF85YFMiH0tDYkdw1/img.png)
+![image-20240909092731733](/images/FridaLab.apk-WriteUp/image-20240909092731733.png)
 
 ​				\> uk.rossmarks.fridalab 패키지안에 challenge_01 클래스를 확인할 수 있다.
 ​				\> 이 클래스의 변수인 값을 1로 바꿔주면 된다.
@@ -71,8 +71,7 @@ setImmediate(function(){ // 연결되어 있는 부분의 바로 다음을 실�
    \> 실행 결과
      프리다 실행 명령어를 통하여 스크립스 실행 : Frida -U -l fridalab.js uk.rossmakrs.fridalab
      실행결과 1번문제가 해결된 것을 확인 할 수 있다.
-
-![img](https://blog.kakaocdn.net/dn/LjV7K/btqBUz0T9mH/6qQ9auQWT1JTVHC5onelXK/img.png)
+![image-20240909092741247](/images/FridaLab.apk-WriteUp/image-20240909092741247.png)
 
 
 
@@ -83,8 +82,7 @@ setImmediate(function(){ // 연결되어 있는 부분의 바로 다음을 실�
  \> 문제를 보면 chall02() 함수를 실행 하라는 것이다.
  \> MainActivity를 확인해보면, chall02 함수는 정의되어 있지만 사용을 하지 않는다. 따라서 MainActivity를 불러와 
     chall02함수를 실행해 주면 될 것이다. 
-
-![img](https://blog.kakaocdn.net/dn/dvpa1V/btqBWCIR6mD/GPkzZlzYjPXRP7yNk1EVq0/img.png)
+![image-20240909092749346](/images/FridaLab.apk-WriteUp/image-20240909092749346.png)
 
 ```java
 //#2
@@ -103,8 +101,7 @@ Java.choose("uk.rossmarks.fridalab.MainActivity",{
  \> 실행 결과
     프리다 실행 명령어를 통하여 스크립스 실행 : Frida -U -l fridalab.js uk.rossmakrs.fridalab
     실행결과 2번문제가 해결된 것을 확인 할 수 있다.
-
-![img](https://blog.kakaocdn.net/dn/blIziP/btqBXG45H2R/KhAYp41K7txLXpaQmxg1Kk/img.png)
+![image-20240909092803442](/images/FridaLab.apk-WriteUp/image-20240909092803442.png)
 
 
 
@@ -113,8 +110,7 @@ Java.choose("uk.rossmarks.fridalab.MainActivity",{
 \- 문제 : Make chall03() return true
 
  \> 문제를 보면 chall03() 함수에서 True를 리턴하도록 만드는 것이다.
-
-![img](https://blog.kakaocdn.net/dn/mzERW/btqBTLgbWwl/f9iMKwq0AqpQGxRNXkqLnk/img.png)
+![image-20240909092813522](/images/FridaLab.apk-WriteUp/image-20240909092813522.png)
 
 ```java
 //#3
@@ -128,8 +124,7 @@ test.chall03.implementation = function(){
  \> 실행 결과
     프리다 실행 명령어를 통하여 스크립스 실행 : Frida -U -l fridalab.js uk.rossmakrs.fridalab
     실행결과 3번문제가 해결된 것을 확인 할 수 있다.
-
-![img](https://blog.kakaocdn.net/dn/LVUgd/btqBUAyKsCx/KcPIA6V6dtejISGBTo8tGk/img.png)
+![image-20240909092821631](/images/FridaLab.apk-WriteUp/image-20240909092821631.png)
 
 
 
@@ -137,8 +132,7 @@ test.chall03.implementation = function(){
 
 \- 문제 : Send "frida" to chall04()
   \> 문제를 보면 chall04() 인자값에 "frida"라는 문구를 보내어 함수를 실행시키도록 하는 것이다.
-
-![img](https://blog.kakaocdn.net/dn/brl0SI/btqBTLNYj6M/MkeJWeOixwRKCt2wK8it3k/img.png)
+![image-20240909092829377](/images/FridaLab.apk-WriteUp/image-20240909092829377.png)
 
 ```java
 Java.choose("uk.rossmarks.fridalab.MainActivity",{
@@ -154,8 +148,7 @@ Java.choose("uk.rossmarks.fridalab.MainActivity",{
  \> 실행 결과
     프리다 실행 명령어를 통하여 스크립스 실행 : Frida -U -l fridalab.js uk.rossmakrs.fridalab
     실행결과 4번문제가 해결된 것을 확인 할 수 있다.
-
-![img](https://blog.kakaocdn.net/dn/QWs09/btqBWsNhn6B/NXpA7Xog49ROQcqIJT9nZ1/img.png)
+![image-20240909092836988](/images/FridaLab.apk-WriteUp/image-20240909092836988.png)
 
 
 
@@ -163,10 +156,9 @@ Java.choose("uk.rossmarks.fridalab.MainActivity",{
 
 \- 문제 : Always send "frida" to chall05()
   \> 문제를 보면 chall05() 인자값에 "frida"라는 문구를 check를 누를때 마다 보내 함수를 실행시키도록 하는 것이다.
+![image-20240909092843747](/images/FridaLab.apk-WriteUp/image-20240909092843747.png)
 
-![img](https://blog.kakaocdn.net/dn/cILO4w/btqBVgmcPbb/fGizbNcJXc1INZNzyhk0fk/img.png)
-
-![img](https://blog.kakaocdn.net/dn/HGAEC/btqBXFd22i2/RaqkiknKkI0ZWIfggAYEvK/img.png)
+![image-20240909092850954](/images/FridaLab.apk-WriteUp/image-20240909092850954.png)
 
 ```java
 //#5
@@ -180,8 +172,7 @@ test.chall05.implementation = function(){
  \> 실행 결과
     프리다 실행 명령어를 통하여 스크립스 실행 : Frida -U -l fridalab.js uk.rossmakrs.fridalab
     실행결과 5번문제가 해결된 것을 확인 할 수 있다.
-
-![img](https://blog.kakaocdn.net/dn/bbGnHP/btqBUzzQiRZ/v2K01DyIszDOs659I97kV1/img.png)
+![image-20240909092858035](/images/FridaLab.apk-WriteUp/image-20240909092858035.png)
 
 
 
@@ -189,8 +180,7 @@ test.chall05.implementation = function(){
 
 \- 문제 : Run chall06() after 10 seconds with correct value
   \> 문제를 보면 chall06() 함수를 check버튼을 누른뒤 10초 뒤에 실행시키는 것을 의미하는 것 같다
-
-![img](https://blog.kakaocdn.net/dn/xxFXs/btqBTL1FNK9/lFbdcbZyGLi3K8P2akdTB1/img.png)
+![image-20240909092905042](/images/FridaLab.apk-WriteUp/image-20240909092905042.png)
 
 ```java
 //challenge 06, setTimeout(fn, delay) 필요
@@ -220,8 +210,7 @@ setTimeout(function(){
  \> 실행 결과
     프리다 실행 명령어를 통하여 스크립스 실행 : Frida -U -l fridalab.js uk.rossmakrs.fridalab
     실행결과 6번문제가 해결된 것을 확인 할 수 있다.
-
-![img](https://blog.kakaocdn.net/dn/YuhMh/btqBWsGBFnA/fF93cOeAycP5z16Kc3YND0/img.png)
+![image-20240909092924433](/images/FridaLab.apk-WriteUp/image-20240909092924433.png)
 
 
 

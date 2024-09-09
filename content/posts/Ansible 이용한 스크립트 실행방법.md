@@ -21,15 +21,7 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 searchHidden: true
-
-layout: single
-title: "Ansible을 이용한 스크립트 실행방법"
-categories: 자동화
-tag: [Automation, Ansible, Python]
-toc: true
-toc_sticky: true
-toc_label: 목차
-author_profile: false
+typora-root-url: ../
 ---
 
 ## 1. 스크립트 실행을 위한 playbook 작성

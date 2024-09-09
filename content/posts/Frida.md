@@ -21,6 +21,7 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 searchHidden: true
+typora-root-url: ../
 ---
 
 ## 1️⃣ Frida 기본
@@ -52,9 +53,9 @@ searchHidden: true
 
 
 
-#### 📜**동작방식**
+#### 📜**동작방식
 
-![img](https://blog.kakaocdn.net/dn/9u1lO/btqBuQhp3gQ/33cmCDC8kKdgtHl8uqqYmk/img.png)
+![image-20240909092630840](/images/Frida/image-20240909092630840.png)
 
 
 

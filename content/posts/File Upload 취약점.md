@@ -21,15 +21,14 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 searchHidden: true
+typora-root-url: ../
 ---
 
 ## 1️⃣ File Upload 취약점 정리
 
 
 
-#### 📜**File Upload 취약점**
-
-![img](https://blog.kakaocdn.net/dn/cGOQYw/btqByGFdm4U/0W11Zv7RFYLOZOsSHRM6G0/img.png)
+#### 📜**File Upload 취약점
 
 \-     서버에 악성스크립트 업로드 하는것
 

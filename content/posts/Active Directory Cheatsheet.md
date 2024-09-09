@@ -21,6 +21,7 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 searchHidden: true
+typora-root-url: ../
 ---
 
 ## 1️⃣ Active Directory Cheatsheet
@@ -37,7 +38,6 @@ searchHidden: true
 \- Users / Groups / Computers
 
 - 상위 권한을 가진 user 찾기
-- 
 
 
 
@@ -52,11 +52,11 @@ searchHidden: true
 
 
 
-##### 📜**액티비티 Flow**
+##### 📜**액티비티 Flow
 
-![img](https://blog.kakaocdn.net/dn/lonjb/btqC8HvNMP3/6FXjAHQTl0awqiE4hbxKy0/img.png)
+![image-20240909091857392](/images/Active Directory Cheatsheet/image-20240909091857392.png)
 
-![img](https://blog.kakaocdn.net/dn/bHPwhV/btqC85wqtW2/o93Dmo6rYxYtpQhu8VEWOk/img.png)
+![image-20240909091916569](/images/Active Directory Cheatsheet/image-20240909091916569.png)
 
 #### 📜**프래그먼트**
 
@@ -74,9 +74,7 @@ searchHidden: true
 
 ##### 📜**프래그먼트와 액티비티의 관계**
 
-
-
-![img](https://blog.kakaocdn.net/dn/cbZTA0/btqC6QG76En/BV44aqqyVLOVrBNPewZuak/img.png)
+![image-20240909091927585](/images/Active Directory Cheatsheet/image-20240909091927585.png)
 
 #### 📜**서비스**
 
@@ -105,9 +103,7 @@ searchHidden: true
 
 ##### 📜**서비스 생명 주기**
 
-
-
-![img](https://blog.kakaocdn.net/dn/brBSsp/btqC9OnqIwf/zZ6jFGEwQ6Alz08Pdo55r1/img.png)
+![image-20240909091938909](/images/Active Directory Cheatsheet/image-20240909091938909.png)
 
 
 
@@ -141,9 +137,7 @@ searchHidden: true
 
 \- 안드로이드에서 제공하는 URI에는 권한이 필요한 항목과 필요하지 않은 항목들이 있음
 
-
-
-![img](https://blog.kakaocdn.net/dn/bhpsSB/btqC6PuwzLg/Rqj4dTN0pmhqFknK4a0clk/img.png)
+![image-20240909091949490](/images/Active Directory Cheatsheet/image-20240909091949490.png)
 
 #### 📜**인텐트**
 
@@ -158,9 +152,7 @@ searchHidden: true
  \> 암시적 인텐트 : 특정 구성요소를 지정하지 않고, 수행할 작업을 지정하면 해당 작업을 처리할 수 있는 구성요소가 선택되어 작업을 수행
    (전화걸기, 지도에 현재 위치 표시 등)
 
-
-
-![img](https://blog.kakaocdn.net/dn/cJ9geA/btqC9Onq1SU/IZXqvjGiCkjjNGAidIdEcK/img.png)
+![image-20240909091957888](/images/Active Directory Cheatsheet/image-20240909091957888.png)
 
 #### 📜**빌드 프로세스**
 
@@ -176,9 +168,7 @@ searchHidden: true
 
  \> 릴리즈 : 개발자 서명 필요
 
-
-
-![img](https://blog.kakaocdn.net/dn/m90HG/btqC6mF8vsG/ak1vyOjaadVgGdmkL38M6k/img.png)
+![image-20240909092005200](/images/Active Directory Cheatsheet/image-20240909092005200.png)
 
 #### 📜**안드로이드 앱 프로젝트 구성요소**
 
@@ -206,9 +196,7 @@ searchHidden: true
 
  \> XML 레이아웃, 그림, 문자열을 정의한 XML
 
-
-
-![img](https://blog.kakaocdn.net/dn/byDigb/btqDf1g4efn/9aLIu7NWXTTqyzaTmHPu1K/img.png)
+![image-20240909092014289](/images/Active Directory Cheatsheet/image-20240909092014289.png)
 
 
 

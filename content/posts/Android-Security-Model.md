@@ -21,6 +21,7 @@ ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 searchHidden: true
+typora-root-url: ../
 ---
 
 ## 1️⃣ Android 보안모델	
@@ -112,5 +113,3 @@ searchHidden: true
 \- 세가지 운용 모드 : 비활성(disabled), 허용(permissive), 시행(enforcing)
 
 \- getenforce / setenforce 0
-
-![img](https://blog.kakaocdn.net/dn/liiAy/btqC5nSTkNz/syw9ww5NKT4r1pWsiCXeG1/img.png)
