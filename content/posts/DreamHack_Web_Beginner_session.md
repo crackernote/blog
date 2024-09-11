@@ -1,9 +1,9 @@
 ---
-title: "DreamHack Web Beginner_Command_Injection1"
+title: "DreamHack Web Beginner_session"
 date: 2023-02-25
 # weight: 1
 # aliases: ["/DreamHack"]
-tags: ["DreamHack", "Web", "Wargame", "Beginner", "Command Injection"]
+tags: ["DreamHack", "Web", "Wargame", "Beginner", "session"]
 author: "CrackerNote"
 showToc: true
 TocOpen: false
@@ -24,9 +24,9 @@ searchHidden: true
 typora-root-url: ../
 ---
 
-## 1️⃣ DreamHack Web Beginner_Command Injection1
+## 1️⃣ DreamHack Web Beginner_session
 
-1. 문제확인 (https://dreamhack.io/wargame/challenges/44)
+1. 문제확인 (https://dreamhack.io/wargame/challenges/266)
 2. 풀이
 
   
