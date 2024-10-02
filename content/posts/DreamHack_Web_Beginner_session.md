@@ -35,71 +35,85 @@ typora-root-url: ../
 
 > 드림핵 사이트에서 문제 확인
 
-![image-20240911082034800](/images/DreamHack_Web_Beginner_Command_Injection1/image-20240911082034800.png)
+![image-20240912124244109](/images/DreamHack_Web_Beginner_session/image-20240912124244109.png)
 
-> 서버 오픈 후 접속하면 아래와 같이 Ping을 할 수 있는 사이트 확인
+> 서버 오픈 후 접속하면 아래와 같이 로그인 페이지를 확인 할 수 있음
 
-![image-20240911082135641](/images/DreamHack_Web_Beginner_Command_Injection1/image-20240911082135641.png)
+![image-20240912124323070](/images/DreamHack_Web_Beginner_session/image-20240912124323070.png)
 
 > 문제파일 다운후 코드 확인 가능
 
 ```python
-#!/usr/bin/env python3
-import subprocess
+#!/usr/bin/python3
+from flask import Flask, request, render_template, make_response, redirect, url_for
 
-from flask import Flask, request, render_template, redirect
+app = Flask(__name__)
 
-from flag import FLAG
+try:
+    FLAG = open('./flag.txt', 'r').read()
+except:
+    FLAG = '[**FLAG**]'
 
-APP = Flask(__name__)
+users = {
+    'guest': 'guest',
+    'user': 'user1234',
+    'admin': FLAG
+}
 
+session_storage = {
+}
 
-@APP.route('/')
+@app.route('/')
 def index():
-    return render_template('index.html')
+    session_id = request.cookies.get('sessionid', None)
+    try:
+        username = session_storage[session_id]
+    except KeyError:
+        return render_template('index.html')
 
+    return render_template('index.html', text=f'Hello {username}, {"flag is " + FLAG if username == "admin" else "you are not admin"}')
 
-@APP.route('/ping', methods=['GET', 'POST'])
-def ping():
-    if request.method == 'POST':
-        host = request.form.get('host')
-        cmd = f'ping -c 3 "{host}"'
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'GET':
+        return render_template('login.html')
+    elif request.method == 'POST':
+        username = request.form.get('username')
+        password = request.form.get('password')
         try:
-            output = subprocess.check_output(['/bin/sh', '-c', cmd], timeout=5)
-            return render_template('ping_result.html', data=output.decode('utf-8'))
-        except subprocess.TimeoutExpired:
-            return render_template('ping_result.html', data='Timeout !')
-        except subprocess.CalledProcessError:
-            return render_template('ping_result.html', data=f'an error occurred while executing the command. -> {cmd}')
-
-    return render_template('ping.html')
-
+            pw = users[username]
+        except:
+            return '<script>alert("not found user");history.go(-1);</script>'
+        if pw == password:
+            resp = make_response(redirect(url_for('index')) )
+            session_id = os.urandom(4).hex()
+            session_storage[session_id] = username
+            resp.set_cookie('sessionid', session_id)
+            return resp 
+        return '<script>alert("wrong password");history.go(-1);</script>'
 
 if __name__ == '__main__':
-    APP.run(host='0.0.0.0', port=8000)
+    import os
+    session_storage[os.urandom(1).hex()] = 'admin'
+    print(session_storage)
+    app.run(host='0.0.0.0', port=8000)
 
 ```
 
-- 코드에서 ping() 함수에서 cmd 에 입력되는 값들을 확인 할 수 있음
+- Users 라는 변수에 아이디 : 패스워드로 보이는 값 확인 가능
+- /login 페이지의 코드를 확인하면, sessionid는 임의의 4바이트 수로 결정된다. 16진수로 8자리로 표현됨
+  ![image-20240926102456025](/images/DreamHack_Web_Beginner_session/image-20240926102456025.png)
+  ![image-20240926102504460](/images/DreamHack_Web_Beginner_session/image-20240926102504460.png)
+- main 코드에서 admin의 sessionid는 1바이트 수로 결정되는데, 즉 16진수 2자리로 표현되는 것을 추측함
   
 
 ##### 📜**풀이**
 
-> 위의 코드에서 cmd 변수 처럼 " 8888"; ls" " 값을 입력 했지만 요청한 형식과 일치시키라는 문구 확인함
+> admin의 sessionid가 16진수 2자리 라는것을 예측하고, Burp에서 BruteForce를 진행하여 2자리 sessionid 를 확보할 수 있음
 
-![image-20240911082918165](/images/DreamHack_Web_Beginner_Command_Injection1/image-20240911082918165.png)
+![image-20240926110334618](/images/DreamHack_Web_Beginner_session/image-20240926110334618.png)
 
-> 개발자 도구를 통해 host 입력란을 확인해보니 "Pattern=[A-Za-z0-9.]{5,20}" 을 확인할 수 있음. 이 뜻은 대문자, 소문자, 점(.) 을 이용한 5~20글자만 허용한다는 의미
+![image-20240926110412404](/images/DreamHack_Web_Beginner_session/image-20240926110412404.png)
 
-![image-20240911083117202](/images/DreamHack_Web_Beginner_Command_Injection1/image-20240911083117202.png)
-
-> 개발자 도구에서 해당 내용을 지우고 다시 실행해 보니 정상 동작 하는 것을 확인
-
-![image-20240911083535011](/images/DreamHack_Web_Beginner_Command_Injection1/image-20240911083535011.png)
-
-> 같은 방식으로 이번엔 flag.py 를 출력
-
-![image-20240911083638908](/images/DreamHack_Web_Beginner_Command_Injection1/image-20240911083638908.png)
-
-![image-20240911083644369](/images/DreamHack_Web_Beginner_Command_Injection1/image-20240911083644369.png)
-
+![image-20240926110432292](/images/DreamHack_Web_Beginner_session/image-20240926110432292.png)
+![image-20240926110445942](/images/DreamHack_Web_Beginner_session/image-20240926110445942.png)
