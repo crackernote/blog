@@ -110,19 +110,19 @@ weight = 5
 [[menu.main]]
 identifier = "archives"
 name = "Archives"
-url = "/archives/"
+url = "https://crackernote.github.io/archives/"
 weight = 10
 
 [[menu.main]]
 identifier = "tags"
 name = "tags"
-url = "/tags/"
+url = "https://crackernote.github.io/tags/"
 weight = 20
 
 [[menu.main]]
 identifier = "search"
 name = "Search"
-url = "/search/"
+url = "https://crackernote.github.io/search/"
 weight = 30
 
 
