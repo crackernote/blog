@@ -31,7 +31,7 @@ typora-root-url: ../
 
   
 
-##### 📜**1번**
+##### 📜**1번test**
 
 | 질문 | The Security team believes that a former employee may have gained unauthorized access to AWS resources sometime in the past 3 months by using an identified access key.<br/>What approach would enable the Security team to find out what the former employee may have done within AWS?<br />보안 팀은 이전 직원이 식별된 액세스 키를 사용하여 지난 3개월 동안 AWS 리소스에 대한 무단 액세스 권한을 얻었을 수 있다고 생각합니다. 이전 직원이 AWS 내에서 수행했을 수 있는 작업을 보안 팀이 찾을 수 있는 접근 방식은 무엇입니까? |
 | :--- | ------------------------------------------------------------ |
